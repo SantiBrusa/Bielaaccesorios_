@@ -1,0 +1,14 @@
+.section-products{
+    min-height: 100vh;
+}
+
+.products-grid {
+    display: grid;
+    min-height: 20vh;
+    grid-template-columns: repeat(5,1fr);
+    margin: 5vw;
+}
+
+.container-cards{
+    margin: 10px;
+}

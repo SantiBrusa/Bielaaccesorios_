@@ -1,0 +1,11 @@
+.carousel-inner,
+.carousel-item {
+    aspect-ratio: 4 / 5;
+    height: 50vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.fondo {
+    width: 100vw;
+    margin: 0;
+    min-height: 90vh;
+    background: #3d3027;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.fondo::before {
+  content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../../assets/images/fondo.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.admin-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+}
+
+.admin-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+}
+
+.admin-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+
+}
+
+.admin-back-btn {
+  margin: 10px;
+  padding: 15px 5%;
+  border: solid black 1px;
+  background-color: #3d3027;
+  border-radius: 10px;
+  opacity: 0.8;
+  color: white;
+}
+
+.admin-back-btn:hover {
+  opacity: 1;
+  border: red solid 1px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 60vw;
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    margin: 5vw;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.form-container input, textarea {
+    width: 70%;
+    height: 5vh;
+    opacity: 0.7;
+    margin: 10px;
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 10px;
+    background-color: #3d3027;
+    color: white;
+}
+
+.form-container input:hover, textarea:hover {
+    opacity: 1;
+}
+
+.form-container button {
+    background-color: #3d3027;
+    color: white;
+    padding: 10px 8%;
+    margin: 10px;
+    border: solid white 1px;
+    border-radius: 10px;
+}
+
+.form-container button:hover {
+    opacity: 0.7;
+    border: crimson solid 1px;
+    border-radius: 10px;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.file-input-label:hover {
+  background: #333;
+}
+
+.file-input-hidden {
+  display: none;
+}
+
+.file-name {
+  margin-left: 0.75rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.admin-products table,
+.admin-carousel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  color: black;
+}
+
+.admin-products th,
+.admin-carousel th {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.admin-products td,
+.admin-carousel td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.admin-products tr:last-child td,
+.admin-carousel tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-products tr:hover,
+.admin-carousel tr:hover {
+  background: #fafafa;
+}
+
+.admin-products td img,
+.admin-carousel td img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.admin-products td button,
+.admin-carousel td button {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-products td button:hover,
+.admin-carousel td button:hover {
+  background: #b02a37;
+}
+
+.admin-carousel input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
