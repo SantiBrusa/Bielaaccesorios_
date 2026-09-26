@@ -24,7 +24,7 @@
         ),
         url("../../assets/images/fondo.png");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
 }
@@ -93,4 +93,21 @@
     margin: 10px;
     color: crimson;
     font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .admin-login-container {
+    padding: 40px 5%;
+  }
+
+  .admin-login {
+    max-width: 100%;
+    padding: 35px 20px;
+    margin: 0;
+  }
+
+  .form-login-admin,
+  .input-login-admin {
+    width: 100%;
+  }
 }

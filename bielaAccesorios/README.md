@@ -1,16 +1,29 @@
-# React + Vite
+# Bielaaccesorios — Sitio Web + Panel de Administración
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Sitio web para el negocio de accesorios **Bielaaccesorios**, con panel de administración propio para gestionar productos e imágenes del carousel sin necesidad de tocar código.
 
-Currently, two official plugins are available:
+## 🌐 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Sitio público: _pendiente de deploy_
+- Panel admin: `/admin/login`
 
-## React Compiler
+## 📋 Descripción
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Aplicación full-stack compuesta por un frontend en React que consume una API REST propia, con autenticación JWT para proteger las operaciones de administración (crear, editar y eliminar contenido) y almacenamiento de imágenes en la nube vía Cloudinary.
 
-## Expanding the Oxlint configuration
+## 🛠️ Stack tecnológico
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**Frontend**
+- React 19 + Vite
+- React Router DOM (ruteo SPA)
+- Bootstrap (carousel)
+- CSS puro (sin frameworks de utilidades)
+
+**Backend**
+- Node.js + Express 5
+- MongoDB Atlas + Mongoose
+- JWT (autenticación)
+- bcryptjs (hash de contraseñas)
+- Multer + Cloudinary (subida y almacenamiento de imágenes)
+
+## 📁 Estructura del proyecto
