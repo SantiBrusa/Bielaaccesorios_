@@ -6,7 +6,11 @@ import authRoutes from './routes/auth.routes.js'
 
 const app = express()
 
-app.use(cors())
+const allowedOrigins = process.env.FRONTEND_URL
+  ? [process.env.FRONTEND_URL, 'http://localhost:5173']
+  : true
+
+app.use(cors({ origin: allowedOrigins }))
 app.use(express.json())
 
 app.use('/api/auth', authRoutes)
