@@ -14,8 +14,8 @@ const Products = () => {
       .finally(() => setLoading(false))
   }, [])
 
-  if (loading) return <p>Cargando productos...</p>
-  if (products.length === 0) return <p>Todavía no hay productos cargados.</p>
+  if (loading) return <div className='preProducts'><p>Cargando productos...</p></div>
+  if (products.length === 0) return <div className='preProducts'><p>Todavía no hay productos cargados.</p></div>
 
   return (
     <section id='products' className='section-products'>
