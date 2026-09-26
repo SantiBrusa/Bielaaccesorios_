@@ -73,3 +73,18 @@
   color: #fff;
   text-decoration: underline;
 }
+
+@media (max-width: 700px) {
+    .footer-contenido {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        width: 90%;
+    }
+
+    .footer-links,
+    .footer-redes {
+        align-items: center;
+    }
+}

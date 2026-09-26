@@ -25,3 +25,28 @@
     line-height: 1.7;
     margin-bottom: 20px;
 }
+
+@media (max-width: 900px) {
+    .aboutMe-content {
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .aboutMe-title {
+        font-size: 32px;
+    }
+
+    .aboutMe-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutMe-section {
+        padding: 60px 5%;
+    }
+
+    .aboutMe-title {
+        font-size: 26px;
+    }
+}

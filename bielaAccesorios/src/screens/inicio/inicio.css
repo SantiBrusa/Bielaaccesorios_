@@ -4,8 +4,30 @@
     height: 100vh;
     justify-content: space-between;
     align-items: center;
+    padding: 0 8%;
+    gap: 40px;
 }
 
 .container h1 {
-    font-size:7vh;
+    font-size: 7vh;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 6% 60px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .container h1 {
+        font-size: 8vw;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
 }

@@ -4,7 +4,12 @@
     font-family:'Times New Roman', Times, serif;
 }
 
+section {
+    scroll-margin-top: 80px;
+}
+
 .fondo {
+    width: 100%;
     margin: 0;
     min-height: 100vh;
     background: #3d3027;
@@ -24,7 +29,18 @@
         ),
         url("./assets/images/fondo.png");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .fondo::before {
+        background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+            ),
+            url("./assets/images/fondoCelu.png");
+    }
 }

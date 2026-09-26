@@ -21,9 +21,8 @@ const Products = () => {
     <section id='products' className='section-products'>
       <div className="products-grid">
         {products.map((p) => (
-          <div className='container-cards'>
+          <div className='container-cards' key={p._id}>
             <Card
-              key={p._id}
               image={p.image}
               name={p.name}
               description={p.description}

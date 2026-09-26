@@ -1,0 +1,7 @@
+.map-iframe {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    border-radius: 10px;
+}
