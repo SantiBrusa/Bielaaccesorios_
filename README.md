@@ -4,7 +4,7 @@ Sitio web para el negocio de accesorios **Bielaaccesorios**, con panel de admini
 
 ## 🌐 Demo
 
-- Sitio público: _pendiente de deploy_
+- Sitio público: [Bielaaccesorios](https://bielaaccesorios-pdhj.vercel.app/)
 - Panel admin: `/admin/login`
 
 ## 📋 Descripción
